@@ -5,7 +5,7 @@
 # Set $BUILD_PLATFORM when calling gem build with this gemspec to build for
 # Windows platforms like x86-mingw32.
 #
-s = eval(File.read(File.join(File.dirname(__FILE__), 'rest-client.gemspec')))
+s = eval(File.read(File.join(File.dirname(__FILE__), 'rest-client-srp.gemspec')))
 
 platform = ENV['BUILD_PLATFORM'] || RUBY_PLATFORM
 
