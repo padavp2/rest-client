@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ['README.md', 'history.md']
   s.files = `git ls-files -z`.split("\0")
   s.test_files = `git ls-files -z spec/`.split("\0")
-  s.homepage = 'https://github.com/rest-client/rest-client'
+  s.homepage = 'https://rubygems.org/gems/rest-client-srp'
   s.summary = 'Simple HTTP and REST client for Ruby, inspired by microframework syntax for specifying actions.'
 
   s.add_development_dependency('webmock', '~> 2.0')
