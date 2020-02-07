@@ -165,7 +165,7 @@ Style/Encoding:
 
 Naming/FileName:
   Exclude:
-    - lib/rest-client.rb
+    - lib/rest-client_srp.rb
 
 # Offense count: 3
 # Configuration parameters: EnforcedStyle, SupportedStyles.

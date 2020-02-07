@@ -1,5 +1,5 @@
 require 'webmock/rspec'
-require 'rest-client'
+require 'rest-client_srp'
 
 require_relative './helpers'
 

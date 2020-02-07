@@ -81,7 +81,7 @@ See [history.md](./history.md) for a more complete description of changes.
 Basic usage:
 
 ```ruby
-require 'rest-client'
+require 'rest-client_srp'
 
 RestClient.get(url, headers={})
 
@@ -95,7 +95,7 @@ To pass a payload with other HTTP verbs or to pass more advanced options, use
 More detailed examples:
 
 ```ruby
-require 'rest-client'
+require 'rest-client_srp'
 
 RestClient.get 'http://example.com/resource'
 
