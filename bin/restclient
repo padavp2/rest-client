@@ -3,7 +3,7 @@
 $LOAD_PATH.unshift File.dirname(__FILE__) + "/../lib"
 
 require 'rubygems'
-require 'restclient'
+require 'rest-client'
 require 'yaml'
 
 def usage(why = nil)
