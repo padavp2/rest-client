@@ -30,7 +30,7 @@ describe RestClient::Request do
 
     # TODO: deprecate and remove RestClient::SSLCertificateNotVerified and just
     # pass through OpenSSL::SSL::SSLError directly. See note in
-    # lib/restclient/request.rb.
+    # lib/rest-client/request.rb.
     #
     # On OS X, this test fails since Apple has patched OpenSSL to always fall
     # back on the system CA store.

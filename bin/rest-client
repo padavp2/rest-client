@@ -8,7 +8,7 @@ require 'yaml'
 
 def usage(why = nil)
   puts "failed for reason: #{why}" if why
-  puts "usage: restclient [get|put|post|delete] url|name [username] [password]"
+  puts "usage: rest-client [get|put|post|delete] url|name [username] [password]"
   puts "  The verb is optional, if you leave it off you'll get an interactive shell."
   puts "  put and post both take the input body on stdin."
   exit(1)
@@ -24,7 +24,7 @@ end
 
 @url = ARGV.shift || 'http://localhost:4567'
 
-config = YAML.load(File.read(ENV['HOME'] + "/.restclient")) rescue {}
+config = YAML.load(File.read(ENV['HOME'] + "/.rest-client")) rescue {}
 
 if (c = config[@url])
   @url, @username, @password = [c['url'], c['username'], c['password']]

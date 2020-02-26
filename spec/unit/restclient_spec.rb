@@ -62,9 +62,9 @@ describe RestClient do
     end
 
     it "append the log to the requested filename" do
-      RestClient.log = '/tmp/restclient.log'
+      RestClient.log = '/tmp/rest-client.log'
       f = double('file handle')
-      expect(File).to receive(:open).with('/tmp/restclient.log', 'a').and_yield(f)
+      expect(File).to receive(:open).with('/tmp/rest-client.log', 'a').and_yield(f)
       expect(f).to receive(:puts).with('xyz')
       RestClient.log << 'xyz'
     end
