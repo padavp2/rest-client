@@ -4,12 +4,12 @@ require File.expand_path('../lib/restclient/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'rest-client_srp'
-  s.version = '2.1.1'
+  s.version = '2.1.2'
   s.authors = ['REST Client Team']
   s.description = 'A simple HTTP and REST client for Ruby, inspired by the Sinatra microframework style of specifying actions: get, put, post, delete.'
   s.license = 'MIT'
   s.email = 'discuss@rest-client.groups.io'
-  s.executables = ['restclient']
+  s.executables = ['rest-client']
   s.extra_rdoc_files = ['README.md', 'history.md']
   s.files = `git ls-files -z`.split("\0")
   s.test_files = `git ls-files -z spec/`.split("\0")

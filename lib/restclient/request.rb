@@ -557,9 +557,13 @@ module RestClient
     #
     def stringify_headers headers
       headers.inject({}) do |result, (key, value)|
-        # if key.is_a? Symbol
-        #   key = key.to_s.split(/_/).map(&:capitalize).join('-')
-        # end
+        if key.is_a? Symbol
+          if key.to_s.include?('_')
+            key = key.to_s
+          else
+            key = key.to_s.split(/_/).map(&:capitalize).join('-')
+          end
+        end
         if 'CONTENT-TYPE' == key.upcase
           result[key] = maybe_convert_extension(value.to_s)
         elsif 'ACCEPT' == key.upcase
